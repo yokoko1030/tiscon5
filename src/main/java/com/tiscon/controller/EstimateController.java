@@ -116,7 +116,7 @@ public class EstimateController {
      * @param userOrderForm 顧客が入力した見積もり依頼情報
      * @param result        精査結果
      * @param model         遷移先に連携するデータ
-     * @return 遷移先
+     * @return 遷移先空白は許可されていません
      */
     @PostMapping(value = "result", params = "calculation")
     String calculation(@Validated UserOrderForm userOrderForm, BindingResult result, Model model) {

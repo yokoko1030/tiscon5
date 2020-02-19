@@ -5,6 +5,8 @@ import com.tiscon.validator.Numeric;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 
 /**
  * 顧客が入力する見積もり情報を保持するクラス。
@@ -12,12 +14,17 @@ import javax.validation.constraints.NotNull;
  * @author Oikawa Yumi
  */
 public class UserOrderForm {
+
+    @Size(min=11,max=11)
+    @NotBlank
+    private String tel;
+
     @NotBlank
     private String customerName;
 
     @NotBlank
-    @Numeric
-    private String tel;
+   // @Numeric
+    //private String tel;
 
     @Email
     @NotBlank
