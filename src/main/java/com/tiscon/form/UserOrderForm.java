@@ -23,7 +23,7 @@ public class UserOrderForm {
     private String customerName;
 
     @NotBlank
-   // @Numeric
+    // @Numeric
     //private String tel;
 
     @Email
