@@ -15,9 +15,7 @@
 <div class="container">
   <form th:action="@{/result}" th:object="${userOrderForm}" class="form-horizontal" method="post">
     <h1>お見積り情報確認</h1>
-    <ul th:if="${#fields.hasErrors('all')}">
 
-    </ul>
     <div class="col-sm-12">
       <h4>個人情報</h4>
       <table class="table table-bordered">
@@ -26,18 +24,33 @@
         <tbody>
         <tr>
           <th style="width: 40%">氏名</th>
-          <td><span style  ="color:red" th:text="*{customerName}" th:if="${#fields.hasErrors('customerName')}" th:errors="*{customerName}"></span></td>
+          <td>
+          <span th:text="*{customerName}" ></span>
+            <span style ="color:red"
+                  th:if="${#fields.hasErrors('customerName')}" th:errors="*{customerName}"></span>
+          </td>
+
 
           <input type="hidden" name="customerName" id="customerName" th:value="*{customerName}"/>
         </tr>
+
         <tr>
           <th>連絡先TEL</th>
-          <td><span span style  ="color:red" th:text="*{tel}" th:if="${#fields.hasErrors('tel')}" th:errors="*{tel}"></span></td>
+          <td>
+            <span th:text="*{tel}" ></span>
+            <span style ="color:red"
+                  th:if="${#fields.hasErrors('tel')}" th:errors="*{tel}"></span>
+          </td>
           <input type="hidden" name="tel" id="tel" th:value="*{tel}"/>
         </tr>
         <tr>
           <th>連絡先メールアドレス</th>
-          <td><span style ="color:red" th:text="*{email}" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span></td>
+          <td>
+            <span th:text="*{email}" ></span>
+            <span style ="color:red"
+                  th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+
+          </td>
           <input type="hidden" name="email" id="email" th:value="*{email}"/>
         </tr>
         <tr>
@@ -49,7 +62,11 @@
         </tr>
         <tr>
           <th>転居元住所（市区町村以下）</th>
-          <td><span span style  ="color:red" th:text="*{oldAddress}" th:if="${#fields.hasErrors('oldAddress')}" th:errors="*{oldAddress}"></span></td>
+          <td>
+            <span th:text="*{oldAddress}" ></span>
+            <span style ="color:red"
+                  th:if="${#fields.hasErrors('oldAddress')}" th:errors="*{oldAddress}"></span>
+          </td>
           <input type="hidden" name="oldAddress" id="oldAddress" th:value="*{oldAddress}"/>
         </tr>
         <tr>
@@ -61,7 +78,11 @@
         </tr>
         <tr>
           <th>転居先住所（市区町村以下）</th>
-          <td><span span style  ="color:red" th:text="*{newAddress}" th:if="${#fields.hasErrors('newAddress')}" th:errors="*{newAddress}"></span></td>
+          <td>
+            <span th:text="*{newAddress}" ></span>
+            <span style ="color:red"
+                     th:if="${#fields.hasErrors('newAddress')}" th:errors="*{newAddress}"></span>
+          </td>
           <input type="hidden" name="newAddress" id="newAddress" th:value="*{newAddress}"/>
         </tr>
         </tbody>
