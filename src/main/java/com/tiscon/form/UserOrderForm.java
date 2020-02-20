@@ -17,6 +17,7 @@ public class UserOrderForm {
 
     @Size(min=11,max=11)
     @NotBlank
+    @Numeric
     private String tel;
 
     @NotBlank

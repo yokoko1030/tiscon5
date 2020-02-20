@@ -14,7 +14,7 @@
 <nav th:insert="header.html :: header"></nav>
 <div class="container">
   <form th:action="@{/submit}" th:object="${userOrderForm}" class="form-horizontal" method="post">
-    <h1>お見積り情報入力</h1>
+    <h1 style="color:blue" >お見積り情報入力</h1>
     <ul th:if="${#fields.hasErrors('all')}">
       <li th:each="err : ${#fields.errors('all')}" th:text="${err}"></li>
     </ul>
@@ -26,7 +26,7 @@
           <input type="text" id="customerName" name="customerName" th:field="*{customerName}" class="form-control" value="山田太郎"/>
         </div>
         <div class="form-group">
-          <label for="tel">連絡先TEL (ハイフンなしで入力してください）</label>
+          <label for="tel">連絡先TEL  (ハイフンなしで入力してください）</label>
           <input type="tel" id="tel" name="tel" th:field="*{tel}" class="form-control" value="03-1234-5678"/>
         </div>
         <div class="form-group">
@@ -61,6 +61,7 @@
         <div class="form-group">
           <label for="box">段ボールの個数</label>
           <select name="box">
+            <option value=0>0</option>
             <option value=1>1</option>
             <option value=2>2</option>
             <option value=3>3</option>
