@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 
+
 <head>
   <title>概算見積もり確認</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -93,21 +94,26 @@
         <col span="1" style="background-color: #A9B7C7;">
         <col span="2" style="background-color: #FFFFFF;">
         <tbody>
+
         <tr>
           <th style="width: 40%">段ボールの個数</th>
           <td><span th:text="*{box}"></span></td>
           <input type="hidden" name="box" id="box" th:value="*{box}"/>
         </tr>
+
         <tr>
           <th>ベッドの個数</th>
           <td><span th:text="*{bed}"></span></td>
           <input type="hidden" name="bed" id="bed" th:value="*{bed}"/>
         </tr>
+
+
         <tr>
           <th>ソファーの個数</th>
           <td><span th:text="*{sofa}"></span></td>
           <input type="hidden" name="sofa" id="sofa" th:value="*{sofa}"/>
         </tr>
+
         <tr>
           <th>自転車の個数</th>
           <td><span th:text="*{bicycle}"></span></td>

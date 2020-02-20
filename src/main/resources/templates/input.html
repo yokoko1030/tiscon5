@@ -58,6 +58,8 @@
       </fieldset>
       <fieldset>
         <legend>荷物情報</legend>
+        <ul class = "example">
+        <li>
         <div class="form-group">
           <label for="box" id="box">段ボールの個数</label>
           <select name="box">
@@ -84,6 +86,9 @@
             <option value=20>20</option>
           </select>
         </div>
+          </li>
+
+          <li>
         <div class="form-group">
           <label for="bed" id="bed">ベッドの個数</label>
           <select name="bed">
@@ -95,6 +100,10 @@
             <option value=5>5</option>
           </select>
         </div>
+
+          </li>
+
+          <li>
         <div class="form-group">
           <label for="sofa" id="sofa">ソファ－の個数</label>
           <select name="sofa">
@@ -106,6 +115,9 @@
             <option value=5>5</option>
           </select>
         </div>
+        </li>
+
+         <li>
         <div class="form-group">
           <label for="bicycle" id="bicycle">自転車の個数</label>
           <select name="bicycle">
@@ -117,6 +129,12 @@
             <option value=5>5</option>
           </select>
         </div>
+         </li>
+
+        </ul>
+
+        <ul class = "example">
+          <li>
         <div class="form-group">
           <label for="washingMachine" id="washingMachine">洗濯機の個数</label>
           <select name="washingMachine">
@@ -128,6 +146,9 @@
             <option value=5>5</option>
           </select>
         </div>
+          </li>
+
+          <li>
         <div class="form-group">
           <label for="fridge" id="fridge">冷蔵庫の個数</label>
           <select name="fridge">
@@ -139,6 +160,9 @@
             <option value=5>5</option>
           </select>
         </div>
+
+          </li>
+          <li>
         <div class="form-group">
           <label for="tv" id="tv">テレビの個数</label>
           <select name="tv">
@@ -150,6 +174,9 @@
             <option value=5>5</option>
           </select>
         </div>
+          </li>
+
+        </ul>
         <div class="form-group">
           <label for="washingMachineInstallation">洗濯機の設置工事申し込み</label>
           <select id="washingMachineInstallation" name="washingMachineInstallation" class="form-control" th:field="*{washingMachineInstallation}">

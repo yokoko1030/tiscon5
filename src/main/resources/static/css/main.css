@@ -193,6 +193,16 @@ ul.label {
     border: 1px solid rgba(34,36,38,.15);
 }
 
+
+.example li{
+display: inline-block;
+width: 150x;
+height: 50px;
+
+}
+
+
+
 td {
     width: 400px;
 }
