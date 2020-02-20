@@ -19,9 +19,15 @@ public class UserOrderDto {
 
     private String bed;
 
+    private String sofa;
+
     private String bicycle;
 
     private String washingMachine;
+
+    private String fridge;
+
+    private String tv;
 
     private boolean washingMachineInstallation;
 
@@ -97,6 +103,14 @@ public class UserOrderDto {
         this.bed = bed;
     }
 
+    public int getSofa() {
+        return Integer.parseInt(sofa);
+    }
+
+    public void setSofa(String sofa) {
+        this.sofa = sofa;
+    }
+
     public int getBicycle() {
         return Integer.parseInt(bicycle);
     }
@@ -111,6 +125,22 @@ public class UserOrderDto {
 
     public void setWashingMachine(String washingMachine) {
         this.washingMachine = washingMachine;
+    }
+
+    public int getFridge() {
+        return Integer.parseInt(fridge);
+    }
+
+    public void setFridge(String fridge) {
+        this.fridge = fridge;
+    }
+
+    public int getTv() {
+        return Integer.parseInt(tv);
+    }
+
+    public void setTv(String tv) {
+        this.tv = tv;
     }
 
     public boolean getWashingMachineInstallation() {

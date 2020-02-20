@@ -53,11 +53,23 @@ public class UserOrderForm {
 
     @Numeric
     @NotBlank
+    private String sofa;
+
+    @Numeric
+    @NotBlank
     private String bicycle;
 
     @Numeric
     @NotBlank
     private String washingMachine;
+
+    @Numeric
+    @NotBlank
+    private String fridge;
+
+    @Numeric
+    @NotBlank
+    private String tv;
 
     @NotNull
     private boolean washingMachineInstallation;
@@ -134,6 +146,14 @@ public class UserOrderForm {
         this.bed = bed;
     }
 
+    public String getSofa() {
+        return sofa;
+    }
+
+    public void setSofa(String sofa) {
+        this.sofa = sofa;
+    }
+
     public String getBicycle() {
         return bicycle;
     }
@@ -148,6 +168,22 @@ public class UserOrderForm {
 
     public void setWashingMachine(String washingMachine) {
         this.washingMachine = washingMachine;
+    }
+
+    public String getFridge() {
+        return fridge;
+    }
+
+    public void setFridge(String fridge) {
+        this.fridge = fridge;
+    }
+
+    public String getTv() {
+        return tv;
+    }
+
+    public void setTv(String tv) {
+        this.tv = tv;
     }
 
     public boolean getWashingMachineInstallation() {
