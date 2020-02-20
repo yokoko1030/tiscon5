@@ -24,8 +24,8 @@
         <tbody>
         <tr>
           <th style="width: 40%">氏名</th>
-          <td><span th:text=></span></td>
-          <input type="hidden" name="customerName" id="customerName" th:value="*{customerName}"/
+          <td><span th:text="*{customerName}"></span></td>
+          <input type="hidden" name="customerName" id="customerName" th:value="*{customerName}"/>
         </tr>
         <tr>
           <th>連絡先TEL</th>
@@ -79,6 +79,11 @@
           <input type="hidden" name="bed" id="bed" th:value="*{bed}"/>
         </tr>
         <tr>
+          <th>ソファーの個数</th>
+          <td><span th:text="*{sofa}"></span></td>
+          <input type="hidden" name="sofa" id="sofa" th:value="*{sofa}"/>
+        </tr>
+        <tr>
           <th>自転車の個数</th>
           <td><span th:text="*{bicycle}"></span></td>
           <input type="hidden" name="bicycle" id="bicycle" th:value="*{bicycle}"/>
@@ -87,6 +92,16 @@
           <th>洗濯機の個数</th>
           <td><span th:text="*{washingMachine}"></span></td>
           <input type="hidden" name="washingMachine" id="washingMachine" th:value="*{washingMachine}"/>
+        </tr>
+        <tr>
+          <th>冷蔵庫の個数</th>
+          <td><span th:text="*{fridge}"></span></td>
+          <input type="hidden" name="fridge" id="fridge" th:value="*{fridge}"/>
+        </tr>
+        <tr>
+          <th>テレビの個数</th>
+          <td><span th:text="*{tv}"></span></td>
+          <input type="hidden" name="tv" id="tv" th:value="*{tv}"/>
         </tr>
         <tr>
           <th>洗濯機の設置工事申し込み</th>

@@ -59,8 +59,9 @@
       <fieldset>
         <legend>荷物情報</legend>
         <div class="form-group">
-          <label for="box">段ボールの個数</label>
+          <label for="box" id="box">段ボールの個数</label>
           <select name="box">
+            <option value=0>0</option>
             <option value=1>1</option>
             <option value=2>2</option>
             <option value=3>3</option>
@@ -84,17 +85,70 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="bed">ベッドの個数</label>
-          <input type="text" id="bed" name="bed" th:field="*{bed}" class="form-control" value="3"/>
+          <label for="bed" id="bed">ベッドの個数</label>
+          <select name="bed">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="bicycle">自転車の個数</label>
-          <input type="text" id="bicycle" name="bicycle" th:field="*{bicycle}" class="form-control" value="1"/>
+          <label for="sofa" id="sofa">ソファ－の個数</label>
+          <select name="sofa">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="washingMachine">洗濯機の個数</label>
-          <input type="text" id="washingMachine" name="washingMachine" th:field="*{washingMachine}" class="form-control"
-                 value="1"/>
+          <label for="bicycle" id="bicycle">自転車の個数</label>
+          <select name="bicycle">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="washingMachine" id="washingMachine">洗濯機の個数</label>
+          <select name="washingMachine">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fridge" id="fridge">冷蔵庫の個数</label>
+          <select name="fridge">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="tv" id="tv">テレビの個数</label>
+          <select name="tv">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
         </div>
         <div class="form-group">
           <label for="washingMachineInstallation">洗濯機の設置工事申し込み</label>
