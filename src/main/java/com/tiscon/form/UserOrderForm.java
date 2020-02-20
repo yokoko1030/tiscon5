@@ -71,6 +71,10 @@ public class UserOrderForm {
     @NotBlank
     private String tv;
 
+    @Numeric
+    @NotBlank
+    private String table;
+
     @NotNull
     private boolean washingMachineInstallation;
 
@@ -184,6 +188,14 @@ public class UserOrderForm {
 
     public void setTv(String tv) {
         this.tv = tv;
+    }
+
+    public String getTable() {
+        return table;
+    }
+
+    public void setTable(String table) {
+        this.table = table;
     }
 
     public boolean getWashingMachineInstallation() {

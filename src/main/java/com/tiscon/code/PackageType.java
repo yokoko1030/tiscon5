@@ -19,7 +19,9 @@ public enum PackageType implements CodeEnum{
 
     FRIDGE(6, "冷蔵庫"),
 
-    TV(7, "テレビ");
+    TV(7, "テレビ"),
+
+    TABLE(8,"テーブル");
 
     /** 荷物のラベル */
     private final String label;
