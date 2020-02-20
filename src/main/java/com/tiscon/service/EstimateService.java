@@ -88,6 +88,7 @@ public class EstimateService {
                 + getBoxForPackage(dto.getTv(), PackageType.TV)
                 + getBoxForPackage(dto.getTable(), PackageType.TABLE);
 
+
         // 箱に応じてトラックの種類が変わり、それに応じて料金が変わるためトラック料金を算出する。
         int pricePerTruck = estimateDAO.getPricePerTruck(boxes);
 
