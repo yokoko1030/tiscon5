@@ -151,6 +151,17 @@
           </select>
         </div>
         <div class="form-group">
+          <label for="table" id="table">テーブルの個数</label>
+          <select name="table">
+            <option value=0>0</option>
+            <option value=1>1</option>
+            <option value=2>2</option>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+          </select>
+        </div>
+        <div class="form-group">
           <label for="washingMachineInstallation">洗濯機の設置工事申し込み</label>
           <select id="washingMachineInstallation" name="washingMachineInstallation" class="form-control" th:field="*{washingMachineInstallation}">
             <option th:value="false" th:text="なし">なし</option>

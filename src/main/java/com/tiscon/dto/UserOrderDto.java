@@ -29,6 +29,8 @@ public class UserOrderDto {
 
     private String tv;
 
+    private String table;
+
     private boolean washingMachineInstallation;
 
     public String getCustomerName() {
@@ -141,6 +143,14 @@ public class UserOrderDto {
 
     public void setTv(String tv) {
         this.tv = tv;
+    }
+
+    public int getTable() {
+        return Integer.parseInt(table);
+    }
+
+    public void setTable(String table) {
+        this.table = table;
     }
 
     public boolean getWashingMachineInstallation() {
